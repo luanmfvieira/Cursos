@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+        @font-face {
+            font-family: 'idroid';
+            src: url('../fontes/idroid.otf') format('opentype');
+            font-weight: normal;
+        }
+    
+        @font-face {
+            font-family: 'BebasNeue';
+            src: url('../fontes/BebasNeue-Regular.ttf') format('truetype');
+        }
+
+        :root {
+            --verde00: rgb(11, 49, 30);
+            --verde01: rgb(27, 122, 75);
+            --verde02: rgb(43, 184, 113);
+            --bg00: rgb(231, 225, 190);
+
+            --fonte-padrão: Arial, Helvetica, sans-serif;
+            --fonte-destaque: 'BebasNeue';
+            --fonte-android: 'idroid';
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+    
+        main {
+            margin: 0 auto;
+            margin-bottom: 40px;
+            min-width: 300px;
+            max-width: 1000px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 10px black;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            text-align: justify;
+        }
+    
+        header {
+            margin: auto;
+            text-align: center;
+            background: linear-gradient(to bottom, var(--verde02), var(--verde00));
+            color: white;
+            padding: 20px;
+            margin: auto;
+            min-width: 300px;
+        }
+    
+        body {
+            font-family: var(--fonte-padrão);
+            background-color: var(--bg00);
+            margin: 0px;
+            padding: 0px;
+        }
+    
+        ol {
+            list-style-type: none;
+            columns: 2;
+        }
+    
+        li::before {
+            content: "✓";
+        }
+    
+        nav>a {
+            text-decoration: none;
+            color: var(--verde02);
+            margin: 5px;
+            padding: 10px;
+    
+        }
+    
+        nav>a:hover {
+            margin: 10px 10px;
+            background-color: var(--verde02);
+            border-radius: 5px;
+            color: var(--verde00);
+            transition-duration: 0.5s;
+    
+        }
+    
+        p>a {
+            font-weight: bold;
+            color: var(--verde00);
+            text-decoration: none;
+    
+        }
+    
+        p>a:hover {
+            text-decoration: underline;
+            transition-duration: 0.5s;
+    
+        }
+    
+        h1 {
+            color: var(--verde00);
+        }
+    
+        h1.first_h1 {
+            font-size: 40px;
+            font-family: var(--fonte-destaque);
+            color: white;
+            letter-spacing: 1px;
+            font-weight: 300;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 5px;
+            text-shadow: 0px 2px 2px black;
+        }
+    
+        h1.second_h1 {
+            font-family: var(--fonte-android);
+            font-size: 1.8em;
+            margin: 0px;
+    
+        }
+    
+        h2.first_h2 {
+            font-family: var(--fonte-padrão);
+            color: white;
+            font-size: 20px;
+            padding-bottom: 70px;
+            margin: 10px;
+            text-shadow: 0px 2px 2px black;
+            text-align: center;
+        }
+    
+        h2 {
+            color: var(--verde00);
+            font-family: idroid;
+            margin: 0 auto;
+        }
+    
+        h2.second_h2 {
+            font-family: var(--fonte-padrão);
+            color: black;
+        }
+    
+        div.video {
+            margin: 0px -20px 30px -20px;
+            padding: 20px;
+            background-color: var(--verde00);
+            position: relative;
+            height: 455px;
+        }
+    
+        div.video>iframe {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            width: 90%;
+            height: 90%;
+        }
+    
+        .lista {
+            border-radius: 5px;
+            background-color: var(--verde02);
+    
+        }
+    
+        .lista>p,
+        .lista>ol {
+            padding: 10px 10px;
+        }
+    
+        .lista>h2 {
+            background-color: var(--verde00);
+            color: white;
+            font-family: var(--fonte-padrão);
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
+        }
+    
+        .final {
+            color: white;
+            text-align: center;
+            background-color: var(--verde00);
+        }
+    
+        .final>h5 {
+            margin: 0px;
+            padding: 5px;
+        }
+    
+        footer>a {
+            color: white;
+            text-decoration: none;
+        }
+    
+        footer>a:hover {
+            text-decoration: underline;
+        }
+    
+        .destaque {
+            color: var(--verde00);
+            font-weight: bold;
+        }
